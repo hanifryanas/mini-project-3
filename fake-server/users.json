@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "admin",
+            "email": "admin",
+            "password": "admin"
+        },
+        {
+            "id": 1,
+            "username": "lanaya",
+            "email": "lanaya@gmail.com",
+            "password": "lanaya"
+        },
+        {
+            "id": 2,
+            "username": "jahrakal",
+            "email": "jahrakal@gmail.com",
+            "password": "jahrakal"
+        },
+        {
+            "id": 3,
+            "username": "luna",
+            "email": "luna@gmail.com",
+            "password": "luna"
+        },
+        {
+            "id": 4,
+            "username": "pudge",
+            "email": "pudge@gmail.com",
+            "password": "pudge"
+        }
+    ]
+}
