@@ -1,0 +1,31 @@
+.add-product-container form{
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-product-container form label{
+    text-align: left;
+}
+
+.add-product-button {
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(6, 45, 12);
+    border: 1px solid rgb(6, 45, 12);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.add-product-button:hover {
+    cursor: pointer;
+    background-color: rgb(6, 45, 12);
+    border: 1px solid rgb(6, 45, 12);
+    color: white;
+}
