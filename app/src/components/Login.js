@@ -24,10 +24,14 @@ const Login = () => {
         };
         axios.post('http://localhost:3100/auth/login', user)
             .then((res) => {
-                console.log(res.data.access_token);
                 if (res?.data?.access_token) {
                     const accessToken = `Bearer ${res.data.access_token}`;
                     localStorage.setItem("accessToken", accessToken);
+                    window.location.href = "/";
+                }
+                else{
+                    alert("Incorrect username/email or password");
+                    window.location.href = "/login";
                 }
             })
             .catch((err) => {
@@ -35,27 +39,23 @@ const Login = () => {
             });
     };
 
+
     return (
         <div className="login-container">
+            <h2>Login Menu</h2>
             <form onSubmit={handleLogin}>
-                <label>
-                    Email or Username:
-                    <input
-                        value={emailUsername}
-                        onChange={handleEmailUsername}
-                        type="text"
-                        placeholder="email or username"
-                    ></input>
-                </label>
-                <label>
-                    Password:
-                    <input
-                        value={password}
-                        onChange={handlePassword}
-                        type="password"
-                        placeholder="password"
-                    ></input>
-                </label>
+                <input
+                    value={emailUsername}
+                    onChange={handleEmailUsername}
+                    type="text"
+                    placeholder="email or username"
+                ></input>
+                <input
+                    value={password}
+                    onChange={handlePassword}
+                    type="password"
+                    placeholder="password"
+                ></input>
                 <button className="login-button" type="submit">
                     Login
                 </button>

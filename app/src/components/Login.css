@@ -1,18 +1,50 @@
 .login-container {
-    background-color: rgb(206, 241, 251);
+    background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    row-gap: 1px;
     padding: 40px 0px;
 }
 
 .login-container form {
     background-color: white;
-    border-radius: 10px;
-    width: 600px;
-    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 265px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    border: #0b682e solid 3px;
+    color: #0b682e;
+}
+
+h2 {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    color: white;
+    background: #0b682e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.login-container input {
+    border: none;
+    border: #0b682e solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0b682e;
 }
 
 .login-button {
@@ -20,15 +52,15 @@
     padding: 10px;
     font-weight: bolder;
     font-size: 16px;
-    color: rgb(15, 15, 87);
-    border: 1px solid rgb(15, 15, 87);
+    color: #0b682e;
+    border: 1px solid #0b682e;
     background-color: white;
     transition: 0.3s;
 }
 
 .login-button:hover {
     cursor: pointer;
-    background-color: rgb(15, 15, 87);
-    border: 1px solid rgb(15, 15, 87);
+    background-color: #0b682e;
+    border: 1px solid #0b682e;
     color: white;
 }

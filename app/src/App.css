@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+nav{
+  display: flex;
+  padding-left: 7%;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #0b682e;
+  color: white;
+}
+
+nav span{
+  display: flex;
+  font-size: 1 rem;
+  font-weight: bold;
+  padding-left: 65%;
+  justify-content: right;
+  padding-right: 10%;
+}
+
+nav span a{
+  padding-right: 50%;
+  color: white;
+  text-decoration: none;
+}
