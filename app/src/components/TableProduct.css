@@ -14,7 +14,7 @@ table{
     border-collapse: collapse;
     border-spacing: 1;
     border: 3px solid rgb(62, 108, 61);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .button{

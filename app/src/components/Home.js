@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Home.css";
 import atob from 'atob';
-import ProductCard from './ProductCard';
+import CardContainer from './CardContainer';
 
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
       <>
         <div className="container">
           <h2>Welcome {user.username} !</h2>
-          <ProductCard/>
+          <CardContainer />
         </div>
       </>
       :

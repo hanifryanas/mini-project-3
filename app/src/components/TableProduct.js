@@ -2,15 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './TableProduct.css';
 
 const TableProduct = ({productList, handleEditProduct, handleDeleteProduct}) => {
-    console.log(productList);
     const [isEdit, setIsEdit] = useState(false)
-
     const [productId, setProductId] = useState('');
     const [productName, setProductName] = useState('');
     const [productPrice, setProductPrice] = useState('');
     const [productDescription, setProductDescription] = useState('');
     const [productImage, setProductImage] = useState('');
-
 
     useEffect(() => {
         setProductName(productList.name)
@@ -73,7 +70,7 @@ const TableProduct = ({productList, handleEditProduct, handleDeleteProduct}) => 
             }
             console.log(editedProduct);
             handleEditProduct(editedProduct);
-            setIsEdit(false)
+            setIsEdit(false);
         } else {
             alert('Please fill all the field')
         }

@@ -1,0 +1,14 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "card card card"
+    "card card card"
+    "card card card";
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: #0b682e solid 3px;
+    border-radius: 5px;
+}
