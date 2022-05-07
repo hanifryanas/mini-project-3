@@ -48,7 +48,7 @@ const Container = () => {
     }
 
     return (
-        <section>
+        <section className='table-container'>
             <AddProduct handleAddProduct={handleAddProduct} />
             <TableProduct productList={productList} handleEditProduct={handleEditProduct} handleDeleteProduct={handleDeleteProduct} />
         </section>
