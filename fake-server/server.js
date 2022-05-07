@@ -4,8 +4,14 @@ const jsonServer = require('json-server')
 const jwt = require('jsonwebtoken')
 
 const server = jsonServer.create()
-const router = jsonServer.router('./db.json')
+//read file db json products
 const userdb = JSON.parse(fs.readFileSync('./users.json', 'UTF-8'))
+const productdb = JSON.parse(fs.readFileSync('./db.json', 'UTF-8'))
+const joindb = {
+    users: userdb.users,
+    products: productdb.products
+}
+const router = jsonServer.router(joindb)
 
 server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
@@ -37,17 +43,6 @@ function isAuthenticated({ username, password }) {
     }
 }
 
-function updateProduct(id, newProduct) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const product = products.find(p => p.id === id)
-            if (!product) {
-                reject(new Error('Product not found'))
-            }
-            resolve(newProduct)
-        }, 5000)
-    })
-}
 
 // Login to one of the users from ./users.json
 server.post('/auth/login', (req, res) => {
@@ -75,19 +70,15 @@ server.post('/auth/login', (req, res) => {
 router.post('/products', (req, res) => {
     const { id, name, price, description } = req.body
     const newProduct = { id, name, price, description }
-    updateProduct(id, newProduct).then(product => {
-        res.status(201).json({ product })
-    }
-    ).catch(err => {
-        res.status(500).json({ err })
-    }
-    )
+    productdb.products.push(newProduct)
+    fs.writeFileSync('./users.json', JSON.stringify(productdb))
+    res.status(201).json({ status: 'success', data: newProduct })
 })
 
 router.put('/products/:id', (req, res) => {
     const { id } = req.params
     const product = req.body
-    const found = router.db.get('products').find({ id }).assign(product).write()
+    const found = router.joindb.get('products').find({ id }).assign(product).write()
     if (found) {
         res.status(200).json({ product })
     } else {
@@ -97,13 +88,44 @@ router.put('/products/:id', (req, res) => {
 
 router.delete('/products/:id', (req, res) => {
     const { id } = req.params
-    const removed = router.db.get('products').remove({ id }).write()
+    const removed = router.joindb.get('products').remove({ id }).write()
     if (removed) {
         res.status(200).json({ message: 'Product removed' })
     } else {
         res.status(404).json({ message: 'Product not found' })
     }
 })
+
+
+router.post('/users', (req, res) => {
+    const { username, email, password } = req.body
+    const newUser = { username, email, password }
+    userdb.users.push(newUser)
+    fs.writeFileSync('./users.json', JSON.stringify(userdb))
+    res.status(201).json({ user: newUser })
+})
+
+router.put('/users/:id', (req, res) => {
+    const { id } = req.params
+    const user = req.body
+    const found = router.joindb.get('users').find({ id }).assign(user).write()
+    if (found) {
+        res.status(200).json({ user })
+    } else {
+        res.status(404).json({ message: 'User not found' })
+    }
+})
+
+router.delete('/users/:id', (req, res) => {
+    const { id } = req.params
+    const removed = router.joindb.get('users').remove({ id }).write()
+    if (removed) {
+        res.status(200).json({ message: 'User removed' })
+    } else {
+        res.status(404).json({ message: 'User not found' })
+    }
+})
+
 
 // server.use(/^(?!\/auth).*$/, (req, res, next) => {
 //     if (req.headers.authorization === undefined || req.headers.authorization.split(' ')[0] !== 'Bearer') {

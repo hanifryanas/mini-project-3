@@ -1,0 +1,47 @@
+.add-user-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+    color: #0b682e;
+}
+
+.add-user-container form{
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: #0b682e solid 3px;
+}
+
+.add-user-container form input{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.add-user-container button {
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(6, 45, 12);
+    border: 1px solid rgb(6, 45, 12);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.add-user-container button:hover {
+    cursor: pointer;
+    background-color: rgb(6, 45, 12);
+    border: 1px solid rgb(6, 45, 12);
+    color: white;
+}

@@ -1,4 +1,4 @@
-.table-container{
+.table-user-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +60,3 @@ table{
     border-radius: 5px;
     padding: 5px;
 }
-
-form h2{
-    position: relative;
-    left : 15%;
-    justify-content: center;
-    text-align: center;
-}
-

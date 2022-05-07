@@ -66,9 +66,8 @@ const TableProduct = ({productList, handleEditProduct, handleDeleteProduct}) => 
                 name: productName,
                 price: productPrice,
                 description: productDescription,
-                image: productImage,
+                image: productImage
             }
-            console.log(editedProduct);
             handleEditProduct(editedProduct);
             setIsEdit(false);
         } else {

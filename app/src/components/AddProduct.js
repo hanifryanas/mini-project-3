@@ -59,8 +59,6 @@ const AddProduct = ({handleAddProduct}) => {
       }
   }
 
-
-
   return (
     <div className="add-product-container">
       <h2>Add Product</h2>

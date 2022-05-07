@@ -7,3 +7,17 @@
     background-color: white;
     color: #0b682e;
 }
+
+.add-user-btn{
+    position: relative;
+    right: -600px;
+    background-color: #0b682e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    font-size: 12px;
+}
