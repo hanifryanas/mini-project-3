@@ -3,13 +3,13 @@ mini project about react using json server
 
 # #firstthingsfirst
 you have to install following libaries below :
-for server :
+# for server :
 npm install fs
 npm install body-parser
 npm install json-server
 npm install jsonwebtoken
 
-for app :
+# for app :
 npm install react
 npm install react-router-dom
 npm install axios
