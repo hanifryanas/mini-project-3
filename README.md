@@ -19,9 +19,9 @@ npm install axios
 ```
 
 # instructions to start the project
-you have to start fake-server file first to start running the json-server by using 'node ./server.js' then start running the app by usong 'npm run start'
+you have to start fake-server file first to start running the json-server by using 'node ./server.js' then start running the app by using 'npm run start'
 
 # to using admin mode
-you hae to login first as an admin, username = admin ; password = admin
+you have to login first as an admin, username = admin ; password = admin
 
 # thank you
