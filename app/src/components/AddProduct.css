@@ -1,18 +1,33 @@
+.add-product-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+    color: #0b682e;
+}
 .add-product-container form{
     background-color: white;
     border-radius: 10px;
-    width: 600px;
+    width: 400px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: #0b682e solid 3px;
 }
 
-.add-product-container form label{
+.add-product-container form input{
+    display: flex;
+    align-items: center;
     text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
 }
 
-.add-product-button {
+.add-product-container button {
     border-radius: 10px;
     padding: 10px;
     font-weight: bolder;
@@ -23,7 +38,7 @@
     transition: 0.3s;
 }
 
-.add-product-button:hover {
+.add-product-container button:hover {
     cursor: pointer;
     background-color: rgb(6, 45, 12);
     border: 1px solid rgb(6, 45, 12);

@@ -3,12 +3,12 @@ import axios from "axios";
 import "./Login.css";
 
 const Login = () => {
-    const [emailUsername, setEmailUsername] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleEmailUsername = (e) => {
+    const handleusername = (e) => {
         const val = e.target.value;
-        setEmailUsername(val);
+        setUsername(val);
     };
 
     const handlePassword = (e) => {
@@ -19,7 +19,7 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         const user = {
-            emailUsername: emailUsername,
+            username: username,
             password: password,
         };
         axios.post('http://localhost:3100/auth/login', user)
@@ -27,9 +27,13 @@ const Login = () => {
                 if (res?.data?.access_token) {
                     const accessToken = `Bearer ${res.data.access_token}`;
                     localStorage.setItem("accessToken", accessToken);
-                    window.location.href = "/";
+                    if (user.username === "admin") {
+                        window.location.href = "/admin";
+                    } else {
+                        window.location.href = "/";
+                    }
                 }
-                else{
+                else {
                     alert("Incorrect username/email or password");
                     window.location.href = "/login";
                 }
@@ -45,10 +49,10 @@ const Login = () => {
             <h2>Login Menu</h2>
             <form onSubmit={handleLogin}>
                 <input
-                    value={emailUsername}
-                    onChange={handleEmailUsername}
+                    value={username}
+                    onChange={handleusername}
                     type="text"
-                    placeholder="email or username"
+                    placeholder="username"
                 ></input>
                 <input
                     value={password}

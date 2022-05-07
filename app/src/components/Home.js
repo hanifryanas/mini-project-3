@@ -25,7 +25,7 @@ const Home = () => {
     isLoggedIn ?
       <>
         <div className="container">
-          <h2>Welcome {user.emailUsername} !</h2>
+          <h2>Welcome {user.username} !</h2>
           <ProductCard/>
         </div>
       </>

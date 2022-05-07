@@ -1,60 +1,144 @@
 {
-    "products" : [
-        {
-            "id" : "1",
-            "name" : "Product 1",
-            "price" : "100",
-            "description" : "Product 1 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "2",
-            "name" : "Product 2",
-            "price" : "200",
-            "description" : "Product 2 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "3",
-            "name" : "Product 3",
-            "price" : "300",
-            "description" : "Product 3 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "4",
-            "name" : "Product 4",
-            "price" : "400",
-            "description" : "Product 4 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "5",
-            "name" : "Product 5",
-            "price" : "500",
-            "description" : "Product 5 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "6",
-            "name" : "Product 6",
-            "price" : "600",
-            "description" : "Product 6 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "7",
-            "name" : "Product 7",
-            "price" : "700",
-            "description" : "Product 7 description",
-            "image" : "http://placehold.it/200x200"
-        },
-        {
-            "id" : "8",
-            "name" : "Product 8",
-            "price" : "800",
-            "description" : "Product 8 description",
-            "image" : "http://placehold.it/200x200"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": "100",
+      "description": "Product 1 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": "200",
+      "description": "Product 2 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": "300",
+      "description": "Product 3 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "price": "400",
+      "description": "Product 4 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "price": "500",
+      "description": "Product 5 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "price": "600",
+      "description": "Product 6 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "price": "7007",
+      "description": "Product 7 description",
+      "image": "http://placehold.it/200x200"
+    },
+    {
+      "name": "Product 8",
+      "price": "800",
+      "description": "Product 8 description",
+      "image": "http://placehold.it/200x200",
+      "id": 8
+    },
+    {
+      "name": "dsssaa",
+      "price": "56506",
+      "description": "akdlasdk",
+      "image": "http://localhost:3000/admin",
+      "id": 9
+    },
+    {
+      "name": "ddddddsffdd",
+      "price": "565067",
+      "description": "akdlasdks",
+      "image": "http://localhost:3000/admin",
+      "id": 11
+    },
+    {
+      "name": "dddddssd",
+      "price": "56506",
+      "description": "akdlasdks",
+      "image": "http://localhost:3000/admin",
+      "id": 12
+    },
+    {
+      "name": "sdsdaaaa",
+      "price": "ssss",
+      "description": "ssssss",
+      "image": "http://localhost:3000/admin",
+      "id": 13
+    },
+    {
+      "name": "kkkkkkkkkkk",
+      "price": "656322",
+      "description": "13232323",
+      "image": "http://localhost:3000/admin",
+      "id": 14
+    },
+    {
+      "name": "nnnnnnn",
+      "price": "1421241",
+      "description": "sdsdsds",
+      "image": "http://localhost:3000/admin",
+      "id": 15
+    },
+    {
+      "name": "nhnhnh",
+      "price": "5454545",
+      "description": "lklklkl",
+      "image": "http://localhost:3000/admin",
+      "id": 16
+    },
+    {
+      "name": "hghghgh",
+      "price": "123123",
+      "description": "sadasdasd",
+      "image": "http://localhost:3000/admin",
+      "id": 17
+    },
+    {
+      "name": "sssssss",
+      "price": "2313123",
+      "description": "weqeqwe",
+      "image": "http://localhost:3000/admin",
+      "id": 18
+    },
+    {
+      "name": "dddddddddds",
+      "price": "123213",
+      "description": "qweqwe",
+      "image": "http://localhost:3000/admin",
+      "id": 19
+    },
+    {
+      "name": "sdddddddddd",
+      "price": "554646",
+      "description": "adsasdas",
+      "image": "http://localhost:3000/admin",
+      "id": 20
+    },
+    {
+      "id": 21,
+      "name": "ggggggggggaas",
+      "price": "123123123545",
+      "description": "adsadasd",
+      "image": "http://localhost:3000/admin"
+    }
+  ]
 }

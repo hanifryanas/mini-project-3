@@ -3,6 +3,8 @@ import './App.css';
 import Home from './components/Home';
 import Login from './components/Login';
 import Logout from './components/Logout';
+import HomeAdmin from './components/HomeAdmin';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -41,6 +43,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/admin" element={<HomeAdmin />} />
         </Routes>
       </Router>
     </div>

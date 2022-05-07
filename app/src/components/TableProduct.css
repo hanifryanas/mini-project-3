@@ -1,0 +1,80 @@
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: #0b682e;
+}
+
+table{
+    width: 800px;
+    border-collapse: collapse;
+    border-spacing: 1;
+    border: 3px solid rgb(62, 108, 61);
+    border-radius: 5px;
+}
+
+.button{
+    background-color: #0b682e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5x;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.form-group input{
+    height: 25px;
+    width: 350px;
+    border: 1px solid rgb(62, 108, 61);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.btn{
+    background-color: #0b682e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5x;
+    margin: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 85%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-container{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border: #0b682e solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form h2{
+    position: relative;
+    left : 15%;
+    justify-content: center;
+    text-align: center;
+}
+
